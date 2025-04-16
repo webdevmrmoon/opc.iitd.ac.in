@@ -363,9 +363,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var header = document.querySelector(".headerSection");
 
     if (header.classList.contains("scroll-up") || header.classList.contains("scroll-down")) {
-      logoImage.src = "assets/img/logo.svg";
+      logoImage.src = "assets/img/logo.png";
     } else {
-      logoImage.src = "assets/img/logo-light.svg";
+      logoImage.src = "assets/img/logo-light.png";
     }
   }
 

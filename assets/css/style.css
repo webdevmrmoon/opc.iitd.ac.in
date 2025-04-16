@@ -769,7 +769,7 @@ a.topheademlbtn {
 
 .slider-container .slider {
     position: relative;
-    height: 80vh;
+    height: 100vh;
     overflow: hidden;
 }
 .slider-container .slide::after {
@@ -2220,7 +2220,6 @@ ul.footerSocial i {
 /* News Ticker */
 
 .newswrap {
-    height: 50vh;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
@@ -2246,7 +2245,7 @@ ul.footerSocial i {
 .newsTickerCon {
     font-weight: 400;
     width: 100%;
-    height: 62%;
+    height: 300px;
     overflow: hidden;
     padding: 0;
     margin: 0;
