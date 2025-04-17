@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Config - just like Owl Carousel!
+    const config = {
+        autoplay: false,
+        autoplayDelay: 5000, // in milliseconds
+    };
+
     // Selectors
     const slider = document.querySelector('.slider');
     const slides = document.querySelectorAll('.slide');
@@ -9,15 +15,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // State
     let currentIndex = 0;
     let autoSlideInterval;
-    const autoSlideDelay = 5000;
-    const transitionEffects = ['fade', 'slideRight', 'slideLeft', 'zoom', 'slideUp'];
+    const transitionEffects = [ 'zoom', ];
+    // const transitionEffects = ['fade', 'slideRight', 'slideLeft', 'zoom', 'slideUp'];
 
-    // Init
+    // Initialize slider
     function initSlider() {
         slides[0].classList.add('active', `transition-${transitionEffects[0]}`);
         createDots();
         attachEventListeners();
-        startAutoSlide();
+        if (config.autoplay) startAutoSlide();
     }
 
     // Create dot indicators
@@ -35,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return document.querySelectorAll('.dot');
     }
 
-    // Show specific slide
+    // Show slide by index
     function showSlide(index) {
         if (index < 0) index = slides.length - 1;
         if (index >= slides.length) index = 0;
@@ -70,9 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
         showSlide(currentIndex - 1);
     }
 
-    // Autoplay management
+    // Autoplay controls
     function startAutoSlide() {
-        autoSlideInterval = setInterval(nextSlide, autoSlideDelay);
+        if (config.autoplay) {
+            autoSlideInterval = setInterval(nextSlide, config.autoplayDelay);
+        }
     }
 
     function stopAutoSlide() {
@@ -84,7 +92,13 @@ document.addEventListener('DOMContentLoaded', () => {
         startAutoSlide();
     }
 
-    // Event listeners
+    // Optional: external toggle control
+    function toggleAutoplay(state) {
+        config.autoplay = state;
+        resetAutoSlide();
+    }
+
+    // Event Listeners
     function attachEventListeners() {
         prevBtn.addEventListener('click', prevSlide);
         nextBtn.addEventListener('click', nextSlide);
@@ -92,13 +106,12 @@ document.addEventListener('DOMContentLoaded', () => {
         slider.addEventListener('mouseenter', stopAutoSlide);
         slider.addEventListener('mouseleave', startAutoSlide);
 
-        // Keyboard
         document.addEventListener('keydown', e => {
             if (e.key === 'ArrowLeft') prevSlide();
             if (e.key === 'ArrowRight') nextSlide();
         });
 
-        // Swipe
+        // Swipe for touch
         let touchStartX = 0;
         let touchEndX = 0;
 
@@ -120,6 +133,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Start everything
+    // Initialize everything
     initSlider();
+
+    // You can use this externally later if needed:
+    // toggleAutoplay(true);  // Start autoplay
+    // toggleAutoplay(false); // Stop autoplay
 });
