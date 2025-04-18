@@ -230,7 +230,7 @@ p {
     margin: 0px auto;
 }
 
-@media screen and (max-width:1518px) and (min-width:1368px) {
+@media screen and (max-width:1518px) and (min-width:1281px) {
     .site-width {
         max-width: 1372px;
         padding: 0px 40px;
