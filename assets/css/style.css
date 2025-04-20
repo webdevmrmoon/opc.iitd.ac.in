@@ -1051,23 +1051,24 @@ a.topheademlbtn {
 
 .slideRightImg {
     width: 100%;
-    overflow: hidden;
-    border-radius: 26px;
-    border: 3px solid #ddd;
     position: relative;
+    text-align: center;
 
 }
 .slideRightImg img {
     width: 100%;
+    border-radius: 26px;
+    border: 3px solid #ddd;
 }
 .sliderimgBtn {
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
+    position: relative;
+    left: 0;
+    bottom: 0px;
     padding: 8px 17px;
     display: inline-block;
     background: #fff;
     border-radius: 13px;
+    margin-top: 30px;
 }
 
 
@@ -1093,6 +1094,9 @@ a.topheademlbtn {
     padding: 0px 24%;
     margin-top: 7px;
     color: #626262;
+}
+.titleSection.light p {
+    color: #fff;
 }
 .titleSection.left p {
     padding: 0px;
@@ -1496,10 +1500,6 @@ a.topheademlbtn {
 .contactInfo {
     width: 100%;
     height: 100%;
-    display: flex
-;
-    align-items: center;
-    justify-content: center;
 }
 .contactInfoWrapper {
     width: fit-content;
@@ -2477,7 +2477,9 @@ figure.image {
     margin: auto;
     margin-left: 15px;
 }
-
+.titleSection.left.new h2::before {
+    display: none;
+}
 
 .serWrap {
     margin-top: 40px;
@@ -3007,7 +3009,7 @@ figure.image {
 }
 .inrbnr {
     position: relative;
-    min-height: 200px;
+    min-height: 240px;
     background: linear-gradient(83deg, #fff4de59, #ffe1e1ab), url(../img/bgs/inner-bnr-bg.png);
     padding-top: 80px;
     background-size: 100%;
@@ -3017,7 +3019,7 @@ figure.image {
 
 .inrbnrimg {
     width: 100%;
-    height: 200px;
+    height: 240px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -3030,20 +3032,18 @@ figure.image {
     width: 40%;
     position: relative;
 }
-.inrbnrtext {
-    text-align: center;
-}
+
 .inrbnrContent {
     position: relative;
     z-index: 2;
-    height: 200px;
+    height: 240px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .inrbnrtext h2 {
-    font-size: 32px;
+    font-size: 42px;
     color: #ffffff;
 }
 
@@ -3052,7 +3052,7 @@ figure.image {
     align-items: center;
     margin-top: 3px;
     justify-content: flex-start;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 
@@ -3072,12 +3072,15 @@ figure.image {
     padding: 0px 10px;
 }
 
+.inrbrnNav li:first-child { 
+    padding-left: 0px;
+}
 .inrbrnNav li:last-child {
     border: none;
 }
 
 .inrbrnNav li:last-child a {
-    color: #f7921e;
+    color: #f34343;
 }
 
 .researchprsec {
@@ -3501,6 +3504,388 @@ figure.image {
     background-repeat: no-repeat;
     text-align: justify;
     line-height: 32px;
+}
+
+
+.ao-team-column-bx {
+    background-color: rgb(255 248 249);
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: rgb(239 68 71 / 17%) 0px 0px 30px;
+    border-radius: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    padding: 20px;
+    transition: 0.5s linear;
+    min-height: 560px;
+}
+.ao-team-column-bx .ao-team-media {
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 340px;
+}
+.ao-team-column-bx .ao-team-media::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0%;
+    z-index: 2;
+    background: linear-gradient(rgba(125, 185, 232, 0) 0%, rgba(36, 36, 36, 0.795) 100%);
+    transition: 0.3s ease-in-out;
+}
+.ao-team-column-bx:hover .ao-team-media::before {
+    height: 50%;
+}
+.ao-team-column-bx .ao-team-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ao-team-media img {
+    transition: 0.2s linear;
+}
+.ao-team-social {
+    display: flex
+;
+    justify-content: center;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    list-style: none;
+    margin: 0px;
+    transition: 0.5s;
+}
+.ao-team-column-bx:hover .ao-team-social {
+    bottom: 20px;
+}
+.ao-team-social li {
+    margin-right: 4px;
+    padding-right: 4px;
+    position: relative;
+}
+.ao-team-social li a {
+    width: auto;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    transition: 0.5s;
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+}
+.ao-team-column-bx .ao-team-info .ao-team-name {
+    font-size: 24px;
+    margin: 0px 0px 15px;
+}
+.ao-team-column-bx .ao-team-info .ao-team-position {
+    display: table;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    font-size: 14px;
+    background: linear-gradient(90deg, #fa3231, #ac3231);
+    border-radius: 30px;
+    padding: 8px 30px;
+    margin: 0px auto 10px;
+}
+.ao-team-column-bx:hover {
+    border: 2px solid #fa3231;
+}
+
+.HonoraryProfessor  .ao-team-column-bx{
+    min-height: 500px;
+}
+
+.pricing-block-two.leftContent {
+    margin-bottom: 20px;
+}
+.pricing-block-two.leftContent .inner-box .content-column .inner-column{
+    text-align: left;
+    padding: 23px;
+}
+.pricing-block-two.leftContent .inner-box .content-column .inner-column::before {
+    height: 1px;
+    left: 30px;
+    right: auto;
+    bottom: 0px;
+    top: auto;
+}
+
+.aboutImgs.stickyimg {
+    width: 100%;
+}
+.aboutImgs.stickyimg img {
+    width: 100%;
+}
+
+.LaboratoryFacilities .col-md-7  {
+    height: fit-content;
+}
+
+
+.mapSec {
+    width: 100%;
+    height: 400px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.contactInfo {
+    padding-left: 30px;
+}
+.contactInfo .title {
+    display: flex
+;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.contactWrapper {
+    display: flex
+;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+.contactCard {
+    position: relative;
+}
+.contactCard img {
+    width: 30px;
+}
+.contactCard .conttext h5 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #8b8b8b;
+}
+.contactCard .conttext p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.teamPicture {
+    width: 100%;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.teamPicture img {
+    width: 100%;
+}
+
+.teamDetails .aboutCt .titleSection h2 {
+    margin: 0px;
+    margin-bottom: 12px;
+}
+
+.awardCard {
+    position: relative;
+    background-color: rgb(255 248 249);
+    text-align: center;
+    margin-bottom: 10px;
+    box-shadow: rgb(239 68 71 / 17%) 0px 0px 30px;
+    border-radius: 20px;
+    border-width: 2px;
+    overflow: hidden;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-image: initial;
+    padding: 10px;
+    transition: 0.5s linear;
+}
+.awardImg {
+   width: 100%;
+   margin-bottom: 10px;
+}
+.awardImg img {
+    width: 100%;
+    border-radius: 15px;
+}
+.awartitle h6 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #626262;
+    margin-top: 18px;
+}
+
+
+
+
+
+
+
+
+/* Table CSS */
+.rwd-table {
+    margin: auto;
+    min-width: 300px;
+    max-width: 100%;
+    border-collapse: collapse;
+}
+
+.rwd-table tr:first-child {
+    border-top: none;
+    background: #c31a1a;
+    color: #fff;
+}
+
+.rwd-table tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #f5f9fc;
+}
+
+.rwd-table tr:nth-child(odd):not(:first-child) {
+    background-color: #fffbfb;
+}
+
+.rwd-table th {
+    display: none;
+}
+
+.rwd-table td {
+    display: block;
+}
+
+.rwd-table td:first-child {
+    margin-top: .5em;
+}
+
+.rwd-table td:last-child {
+    margin-bottom: .5em;
+}
+
+.rwd-table td:before {
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    width: 120px;
+    display: inline-block;
+    color: #000;
+}
+
+.rwd-table th,
+.rwd-table td {
+    text-align: left;
+}
+
+.rwd-table {
+    color: #333;
+    border-radius: .4em;
+    overflow: hidden;
+}
+
+.rwd-table tr {
+    border-color: #bfbfbf;
+}
+
+.rwd-table th,
+.rwd-table td {
+    padding: .5em 1em;
+}
+
+@media screen and (max-width: 601px) {
+    .rwd-table tr:nth-child(2) {
+        border-top: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .rwd-table tr:hover:not(:first-child) {
+        background-color: #ffebec;
+    }
+
+    .rwd-table td:before {
+        display: none;
+    }
+
+    .rwd-table th,
+    .rwd-table td {
+        display: table-cell;
+        padding: .25em .5em;
+    }
+
+    .rwd-table th:first-child,
+    .rwd-table td:first-child {
+        padding-left: 0;
+    }
+
+    .rwd-table th:last-child,
+    .rwd-table td:last-child {
+        padding-right: 0;
+    }
+
+    .rwd-table th,
+    .rwd-table td {
+        padding: 1em !important;
+    }
+}
+
+/* Table CSS end */
+
+
+.journelCards {
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 14px;
+    min-height: auto;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px; */
+    background: #fff;
+    margin-bottom: 22px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    flex-direction: column;
+}
+.journelCards hr {
+    opacity: 0.1;
+}
+.journalImg {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    border: none;
+    background: #fff;
+    height: 470px;
+}
+
+.journalImg img {
+    width: 100%;
+    transition: 0.4s ease;
+    height: 100%;
+    object-fit: cover;
+}
+
+.journelCards:hover .journalImg img {
+    transform: scale(1.2);
+}
+
+.journalContent {
+    position: relative;
+    text-align: left;
+    padding: 0;
+    width: calc(100% - 40%);
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.eventwrapper .journalContent {
+    width: 100%;
+    margin-top: 20px;
+}
+.journelCards .btn-style-two {
+    padding: 7px 20px;
 }
 /* Responsive */
 

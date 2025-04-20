@@ -259,40 +259,40 @@ $(document).ready(function () {
 });
 
 
-// go to top with side bar nav
-$(function(){
-  $(window).scroll(function() {
+// // go to top with side bar nav
+// $(function(){
+//   $(window).scroll(function() {
   
   
-  }).scroll();
-  $('.navibtn').click(function() {
-      var target = $(this).data('target'); // Get the target section ID from data attribute
-      $('html, body').animate({
-        scrollTop: $(target).offset().top - 50 // Scroll to the top of the target section with an offset of 100px
-      }, 1000); // Adjust the duration of the animation as needed
-    });
+//   }).scroll();
+//   $('.navibtn').click(function() {
+//       var target = $(this).data('target'); // Get the target section ID from data attribute
+//       $('html, body').animate({
+//         scrollTop: $(target).offset().top - 50 // Scroll to the top of the target section with an offset of 100px
+//       }, 1000); // Adjust the duration of the animation as needed
+//     });
   
-  })
+//   })
   
 
-  $(document).ready(function() {
-    $(window).on('scroll', function() {
-        var windscroll = $(window).scrollTop();
-        if (windscroll >= 100) {
-            $('.sectionTop').each(function() {
-                var sectionID = $(this).attr('id');
-                if ($(this).position().top <= windscroll + 140) {
-                    $('.navWrapper ul li a.active').removeClass('active');
-                    $('.navWrapper ul li a[href="#' + sectionID + '"]').addClass('active');
-                }
-            });
-        } else {
-            $('.navWrapper ul li a.active').removeClass('active');
-            $('.navWrapper ul li a:first').addClass('active');
-        }
-    });
+//   $(document).ready(function() {
+//     $(window).on('scroll', function() {
+//         var windscroll = $(window).scrollTop();
+//         if (windscroll >= 100) {
+//             $('.sectionTop').each(function() {
+//                 var sectionID = $(this).attr('id');
+//                 if ($(this).position().top <= windscroll + 140) {
+//                     $('.navWrapper ul li a.active').removeClass('active');
+//                     $('.navWrapper ul li a[href="#' + sectionID + '"]').addClass('active');
+//                 }
+//             });
+//         } else {
+//             $('.navWrapper ul li a.active').removeClass('active');
+//             $('.navWrapper ul li a:first').addClass('active');
+//         }
+//     });
 
-});
+// });
 
 
 
