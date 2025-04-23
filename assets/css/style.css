@@ -3887,6 +3887,72 @@ figure.image {
 .journelCards .btn-style-two {
     padding: 7px 20px;
 }
+
+.bg4 {
+    background: linear-gradient(90deg, #ffffffad, #ffffffb8), url(../img/bg/bg4.jpg);
+    background-size: 100%;
+    background-position: center
+}
+
+.teamdetailWrapper {
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0px 0px 10px #efefef;
+    border-radius: 20px;
+}
+
+.teamdetailWrapper .teamPicture {
+    width: 310px;
+    height: 310px;
+    border-radius: 100%;
+}
+.teamdetailWrapper .teamPicture img {
+    height: 100%;
+    object-fit: cover;
+}
+.teamdetailWrapper .aboutCt {
+    margin-top: 40px;
+}
+
+.titletwo {
+    margin-bottom: 12px;
+    padding-bottom: 7px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+}
+.titletwo::after {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 2px;
+    background: #e02f34;
+    bottom: 0px;
+    left: 0px;
+
+}
+
+.teamcontent li {
+    padding-left: 23px;
+    background-image: url(../img/icons/point-.svg);
+    background-size: 16px;
+    background-position: left top 4px;
+    background-repeat: no-repeat;
+    text-align: justify;
+    line-height: 25px;
+    color: #3c3c3c;
+}
+.teamcontent p {
+    text-align: justify;
+    line-height: 25px;
+}
+.teamDetails .aboutCt .titleSection h6 {
+    font-size: 20px;
+    margin-bottom: 26px;
+}
+.teamdetailWrapper a {
+    color: #e02f34;
+}
 /* Responsive */
 
 @media screen and (max-width:1200px) and (min-width:1024px) {
