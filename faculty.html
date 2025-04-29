@@ -65,10 +65,10 @@
                             </div>
                             <div class="col-sm-4 col-md-6 col-lg-6">
                                 <div class="page_social_icons">
-                                    <a class="social-icon fa-brands fa-facebook-f" href="#" title="Facebook"></a>
-                                    <a class="social-icon fa-brands fa-x-twitter" href="#" title="Twitter"></a>
+                                    <!-- <a class="social-icon fa-brands fa-facebook-f" href="#" title="Facebook"></a> -->
+                                    <!-- <a class="social-icon fa-brands fa-x-twitter" href="#" title="Twitter"></a> -->
                                     <a class="social-icon fa-brands fa-linkedin-in" href="#" title="LinkedIn"></a>
-                                    <a class="social-icon fa-brands fa-instagram" href="#" title="Instagram"></a>
+                                    <!-- <a class="social-icon fa-brands fa-instagram" href="#" title="Instagram"></a> -->
                                 </div>
                             </div>
                         </div>
@@ -86,8 +86,14 @@
                                 <ul>
                                     <li><a class="navibtn" href="index.html">Home</a></li>
                                     <li><a class="navibtn" href="about-us.html">About Us</a></li>
-                                    <li><a class="navibtn active" href="people.html">People</a></li>
-                                    <li><a class="navibtn" href="olc.html">Optics Learning Centre</a></li>
+                                    <li class="hasSub"><a href="javascript:void(0)">People</a>
+                                        <ul class="subMenu">
+                                            <li><a href="faculty.html">Faculty</a></li>
+                                            <li><a href="current-students.html">Current Students</a></li>
+                                            <li><a href="alumni.html">Alumni</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- <li><a class="navibtn" href="olc.html">Optics Learning Centre</a></li> -->
                                     <li><a class="navibtn" href="academics.html">Academics</a></li>
                                     <li><a class="navibtn" href="research.html">Research</a></li>
                                     <li>
@@ -115,10 +121,11 @@
             <div class="site-width">
                 <div class="inrbnrContent">
                     <div class="inrbnrtext">
-                        <h2>People</h2>
+                        <h2>Faculty</h2>
                         <ul class="inrbrnNav">
                             <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
                             <li><a href="javascript:void(0)"> People</a></li>
+                            <li><a href="javascript:void(0)"> Faculty</a></li>
                         </ul>
                     </div>
                 </div>
@@ -138,10 +145,10 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
-                                    <a href="team-details.html"><img src="assets/img/team/P_Senthilkumaran.png" alt="img"></a>
+                                    <img src="assets/img/team/P_Senthilkumaran.png" alt="img">
                                     <ul class="ao-team-social">
                                         <li><a href="mailto:psenthil@opc.iitd.ac.in"><i class="fa-solid fa-envelope"></i> psenthil@opc.iitd.ac.in</a></li>
                                         <!-- <li><a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a></li>
@@ -169,7 +176,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/Anurag_Sharma.png" alt="img"></a>
@@ -188,7 +195,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/Joby_Joseph.png" alt="img"></a>
@@ -207,7 +214,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/Kedar_Khere.png" alt="img"></a>
@@ -226,7 +233,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/Dheeraj_Pratap.JPG" alt="img"></a>
@@ -245,7 +252,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/Pravendra_Kumar.jpg" alt="img"></a>
@@ -264,7 +271,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/Deepak_Jain.jpg" alt="img"></a>
@@ -284,7 +291,7 @@
                     </div>
 
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/Saurabh.jpeg" alt="img"></a>
@@ -303,7 +310,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/Ritwick.jpg" alt="img"></a>
@@ -322,7 +329,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/Gayathri.jpg" alt="img"></a>
@@ -341,7 +348,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/Awanish.jpeg" alt="img"></a>
@@ -372,7 +379,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/JollyXavier.jpg" alt="img"></a>
@@ -391,7 +398,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/BhaskarKanseri.jpg" alt="img"></a>
@@ -421,7 +428,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/Ajoy_Ghatak.jpg" alt="img"></a>
@@ -434,7 +441,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/Jagadish_Chennupati.jpg" alt="img"></a>
@@ -448,7 +455,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/JorgeOjedaCastaneda.jpg" alt="img"></a>
@@ -462,7 +469,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/KeharSingh.jpg" alt="img"></a>
@@ -476,7 +483,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/RajpalSinghSirohi.jpg" alt="img"></a>
@@ -490,7 +497,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/Agrawal_Govind_P.jpg" alt="img"></a>
@@ -504,7 +511,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/Sir-David-Payne.png" alt="img"></a>
@@ -530,7 +537,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="teamCard">
+                        <div class="teamCard" onclick="window.location.href='team-details.html'">
                             <div class="ao-team-column-bx">
                                 <div class="ao-team-media">
                                     <a href="javascript:void(0)"><img src="assets/img/team/Nagarajan.jpg" alt="img"></a>
@@ -570,9 +577,9 @@
                                     <div class="footerContents">
                                         <ul class="footerSocial">
                                             <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                            <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                            <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-                                            <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                            <!-- <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li> -->
+                                            <!-- <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-youtube"></i></a></li> -->
+                                            <!-- <li><a href="javascript:void(0)" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> -->
                                         </ul>
                                     </div>
                                     
@@ -581,9 +588,9 @@
                             <div class="col-md-3">
                                 <div class="ftr-link-bx">
                                     <p class="ttle mb-2"><a href="javascript:void(0)" class="title-16">Quick Links</a></p>
-                                    <a class="navibtn" href="about-us.html" ><i class="fa-solid fa-chevron-right"></i> About Us</a>
-                                    <a class="navibtn" href="people.html" ><i class="fa-solid fa-chevron-right"></i> People</a>
-                                    <a class="navibtn" href="olc.html" ><i class="fa-solid fa-chevron-right"></i> Optics Learning Centre</a>
+                                    <a class="navibtn" href="javascript:void(0)" ><i class="fa-solid fa-chevron-right"></i> Internal</a>
+                                    <a class="navibtn" href="javascript:void(0)" ><i class="fa-solid fa-chevron-right"></i> Booking</a>
+                                    <!-- <a class="navibtn" href="olc.html" ><i class="fa-solid fa-chevron-right"></i> Optics Learning Centre</a> -->
                                     <a class="navibtn" href="research.html" ><i class="fa-solid fa-chevron-right"></i> Research</a>
                                 </div>
                             </div>

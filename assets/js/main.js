@@ -382,26 +382,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 $(document).ready(function(e) {
-	var newsNum = $(".newsTicker li").length;
+	var newsNum = $(".eventTicker li").length;
 	
 	var totalNews_H =0;	
 	for(var i=0; i<newsNum; i++){
-		var news_H = $(".newsTicker li").eq(i).outerHeight(true);
+		var news_H = $(".eventTicker li").eq(i).outerHeight(true);
 		totalNews_H = totalNews_H + news_H;
 	}
 	
-	$(".newsTicker").css('height', totalNews_H+'px');	
+	$(".eventTicker").css('height', totalNews_H+'px');	
 	
 	var speed =1, animAmount, animInterval;
 	
 	animateNews();
 
 	function animateNews(){
-		$(".newsTicker li").eq(0).animate({
+		$(".eventTicker li").eq(0).animate({
 			'marginTop' : '-='+ speed + 'px'
 		},1, function(){
 			animAmount = speed;
-			var animNews_H = $(".newsTicker li").eq(0).outerHeight(true);
+			var animNews_H = $(".eventTicker li").eq(0).outerHeight(true);
 			
 			if(animAmount >= animNews_H){
 				$(this).parent().append($(this));
@@ -414,9 +414,9 @@ $(document).ready(function(e) {
 		});
 	}
 	
-	$(".newsTicker").hover(function(){
+	$(".eventTicker").hover(function(){
 		clearTimeout(animInterval);
-		$(".newsTicker li").eq(0).stop();	
+		$(".eventTicker li").eq(0).stop();	
 	}, function(){
 		animateNews();	
 	});
