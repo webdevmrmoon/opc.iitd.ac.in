@@ -4782,6 +4782,10 @@ figure.image {
 
 
 @media screen and (max-width:768px) {
+    .teamCard {
+        cursor: pointer;
+        width: 100%;
+    }
     .navWrapper .subMenu {
         position: unset;
         width: 90%;
