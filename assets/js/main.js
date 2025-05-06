@@ -457,3 +457,33 @@ $(document).ready(function () {
 });
 
   
+
+// Filter
+$(function(){
+  var $grid = $('.element-item').parent().isotope({
+    itemSelector: '.element-item',
+    layoutMode: 'fitRows'
+  });
+
+  var buttonFilter = '*'; // default to all
+  var selectFilter = '*'; // default to all
+
+  // Button group filter
+  $('.js-radio-button-group').on('click', 'button', function () {
+    $('.js-radio-button-group .button').removeClass('is-checked');
+    $(this).addClass('is-checked');
+    buttonFilter = $(this).attr('data-filter');
+    filterItems();
+  });
+
+  // Select filter
+  $('#filters-2').on('change', function () {
+    selectFilter = this.value;
+    filterItems();
+  });
+
+  function filterItems() {
+    var filterValue = buttonFilter + selectFilter;
+    $grid.isotope({ filter: filterValue });
+  }
+})

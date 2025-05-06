@@ -4383,6 +4383,15 @@ figure.image {
     background: linear-gradient(45deg, #ed3237, #9b1f23);
     color: #fff;
 }
+.filters select {
+    padding: 10px 10px 10px 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px #ddd;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ddd;
+}
 
 .studentListing .ao-team-column-bx {
     width: 94%;
@@ -4794,6 +4803,9 @@ figure.image {
 @media screen and (max-width:768px) {
     .teamCard {
         cursor: pointer;
+        width: 100%!important;
+    }
+    .studentListing .ao-team-column-bx {
         width: 100%;
     }
     .navWrapper .subMenu {
@@ -5137,6 +5149,12 @@ figure.image {
         padding: 00px;
         left: 0px;
     }
+    /* .filtercontentWrapper .teamCard {
+        width: 100%;
+        position: relative !important;
+        right: 0px;
+        margin: auto;
+    } */
 }
 
 @media screen and (max-width: 579px) and (min-width:200px) {
